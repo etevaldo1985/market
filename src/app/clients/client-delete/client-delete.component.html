@@ -1,0 +1,31 @@
+<div  class="container main-container">
+  <h3>Are you sure about deleting {{ client.name }} ?</h3>
+  <hr />
+
+
+
+  <dl class="row">
+      <dt class="col-sm-2">
+      <label class="control-label">Name</label>
+  </dt>
+      <dd class="col-sm-10">
+          {{ client.name }}
+      </dd>
+      <dt class="col-sm-2">
+          <label class="control-label">Documento</label>
+  </dt>
+      <dd class="col-sm-10">
+
+      </dd>
+      <dt class="col-sm-2">
+          <label class="control-label">Ativo</label>
+  </dt>
+
+  </dl>
+
+
+  <div>
+      <a class="btn btn-danger" href="javascript:void(0)" (click)="deleteClient()">Excluir</a>&nbsp;
+      <a class="btn btn-info" [routerLink]="['/fornecedores/listar-todos']">Voltar</a>
+  </div>
+</div>

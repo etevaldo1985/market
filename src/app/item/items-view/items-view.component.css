@@ -1,0 +1,45 @@
+.link-black a {
+  color: black;
+}
+
+.link-black a:hover {
+  color: #0056b3;
+}
+
+.link-black .active {
+  color: #0056b3;
+}
+
+.divider-small {
+  width: 30px;
+  background-color: rgba(0, 0, 0, .1);
+  height: 3px;
+}
+.border{
+  margin: 2rem 1rem;
+  height: 900px;
+
+}
+.jumbotron{
+  height: 10rem;
+  background-color: antiquewhite;
+}
+.display-4{
+  height: 3rem;
+  margin: -1rem 0rem;
+}
+
+.pagination{
+  margin: 3rem 0rem;
+  padding-right: 18rem !important;
+
+
+
+}
+.col-md-4{
+  padding: 3rem;
+  max-width: 27.3%;
+}
+
+
+

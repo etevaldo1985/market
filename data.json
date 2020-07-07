@@ -1,0 +1,319 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "clothing 1",
+      "value": 250,
+      "active": true,
+      "image": "dress"
+    },
+    {
+      "id": 2,
+      "name": "clothing 2",
+      "value": 780,
+      "active": true,
+      "image": "dress2"
+    },
+    {
+      "id": 3,
+      "name": "clothing 3",
+      "value": 500,
+      "active": true,
+      "image": "dress3"
+    },
+    {
+      "id": 4,
+      "name": "clothing 4",
+      "value": 345,
+      "active": true,
+      "image": "dress4"
+    },
+    {
+      "id": 5,
+      "name": "clothing 5",
+      "value": 900,
+      "active": true,
+      "image": "dress5"
+    },
+    {
+      "id": 6,
+      "name": "clothing 6",
+      "value": 680,
+      "active": true,
+      "image": "dress6"
+    },
+    {
+      "id": 7,
+      "name": "clothing 7",
+      "value": 250,
+      "active": true,
+      "image": "dress7"
+    },
+    {
+      "id": 8,
+      "name": "clothing 8",
+      "value": 800,
+      "active": true,
+      "image": "dress8"
+    },
+    {
+      "id": 9,
+      "name": "clothing 9",
+      "value": 345,
+      "active": true,
+      "image": "dress9"
+    },
+    {
+      "id": 10,
+      "name": "clothing 10",
+      "value": 670,
+      "active": true,
+      "image": "dress10"
+    },
+    {
+      "id": 11,
+      "name": "clothing 11",
+      "value": 789,
+      "active": true,
+      "image": "dress11"
+    },
+    {
+      "id": 12,
+      "name": "clothing 12",
+      "value": 900,
+      "active": true,
+      "image": "dress12"
+    },
+    {
+      "id": 13,
+      "name": "clothing 13",
+      "value": 321,
+      "active": true,
+      "image": "dress14"
+    },
+    {
+      "id": 14,
+      "name": "clothing 14",
+      "value": 456,
+      "active": true,
+      "image": "dress14"
+    },
+    {
+      "id": 15,
+      "name": "clothing 15",
+      "value": 567,
+      "active": true,
+      "image": "dress15"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Clark",
+      "email": "clark@gmail.com",
+      "password": "165812",
+      "comfirm": "126512"
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "email": "mary@gmail.com",
+      "password": "164812",
+      "comfirm": "164812"
+    },
+    {
+      "id": 3,
+      "name": "Mark",
+      "email": "mark@gmail.com",
+      "password": "145812",
+      "comfirm": "145812"
+    },
+    {
+      "id": 4,
+      "name": "Jhon",
+      "email": "jhon@gmail.com",
+      "password": "167812",
+      "comfirm": "167812"
+    },
+    {
+      "id": 5,
+      "name": "Heyde",
+      "email": "heyde@gmail.com",
+      "password": "124782",
+      "comfirm": "124782"
+    },
+    {
+      "id": 6,
+      "name": "Matheus",
+      "email": "matheus@gmail.com",
+      "password": "124912",
+      "comfirm": "124912"
+    },
+    {
+      "id": 7,
+      "name": "Lara",
+      "email": "lara@gmail.com",
+      "password": "109812",
+      "comfirm": "109812"
+    },
+    {
+      "id": 8,
+      "name": "Mara",
+      "email": "mara@gmail.com",
+      "password": "134812",
+      "comfirm": "134812"
+    },
+    {
+      "id": 9,
+      "name": "Joana",
+      "email": "joana@gmail.com",
+      "password": "112812",
+      "comfirm": "112812"
+    },
+    {
+      "id": 10,
+      "name": "Marie",
+      "email": "marie@gmail.com",
+      "password": "155812",
+      "comfirm": "155812"
+    },
+    {
+      "id": 11,
+      "name": "Josh",
+      "email": "josh@gmail.com",
+      "password": "124662",
+      "comfirm": "124662"
+    },
+    {
+      "name": "Jose da silva",
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "passConfirm": "Se8digo9",
+      "id": 12
+    },
+    {
+      "name": "Maria Silva",
+      "email": "maria.silva@gmail.com",
+      "password": "se8digo9",
+      "passConfirm": "se8digo9",
+      "id": 13
+    },
+    {
+      "name": "Ricardo",
+      "email": "etevaldo@gmail.com",
+      "password": "123456",
+      "passConfirm": "123456",
+      "id": 15
+    },
+    {
+      "name": "maria vanda",
+      "email": "vanda@gmail.com",
+      "password": "123456",
+      "passConfirm": "123456",
+      "id": 16
+    },
+    {
+      "name": "Pedro",
+      "email": "pedro@gmail.com",
+      "password": "123456",
+      "passConfirm": "123456",
+      "id": 17
+    },
+    {
+      "name": "guilherme",
+      "email": "guiguigui@gmail.com",
+      "password": "123456",
+      "passConfirm": "123456",
+      "id": 18
+    },
+    {
+      "name": "mara",
+      "email": "maraaze@gmail.com",
+      "password": "123456",
+      "passConfirm": "123456",
+      "id": 19
+    },
+    {
+      "name": "guiome",
+      "email": "guiome@gmail.com",
+      "password": "123456",
+      "passConfirm": "123456",
+      "id": 20
+    },
+    {
+      "name": "etevaldo",
+      "email": "etev44aldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "passConfirm": "Se8digo9",
+      "id": 21
+    }
+  ],
+  "login": [
+    {
+      "id": 1,
+      "email": "clark@gmail.com",
+      "password": "123123"
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 2
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 3
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 4
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 5
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 6
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 7
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 8
+    }
+  ],
+  "contact": [
+    {
+      "name": "Etevaldo",
+      "email": "etevaldo.memoria@gmail.com",
+      "message": "teste de envio",
+      "id": 1
+    },
+    {
+      "name": "etevaldo",
+      "email": "etevaldo.memoria@gmail.com",
+      "message": "Mensagem de teste de envio de mensagens!",
+      "id": 2
+    },
+    {
+      "name": "Pedro",
+      "email": "pedro@gmail.com",
+      "message": "teste de envio",
+      "id": 3
+    },
+    {
+      "name": "etevaldo",
+      "email": "etevaldo@gmail.com",
+      "message": "teste",
+      "id": 4
+    }
+  ]
+}

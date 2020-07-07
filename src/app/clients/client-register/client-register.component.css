@@ -1,0 +1,71 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #3f51b5 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+ .navbar:not(.top-nav-collapse) {
+  background: black !important;
+ }
+}
+
+.rgba-gradient {
+  background: linear-gradient(45deg, #eea3a483 , #ebd1958c 100%);
+}
+
+.card {
+  background-color: #ebd195;
+}
+
+.md-form label {
+  color: black;
+}
+
+h6 {
+  line-height: 1.7;
+  color: black !important;
+  font-weight: 400;
+
+}
+h2{
+  font-size: 30pt;
+  color: black;
+  font-weight: 900;
+}
+.mask{
+  height: 1500px;
+}
+.col-md-6{
+      padding-bottom: 50rem;
+}
+.btn{
+  background-color: antiquewhite;
+}
+

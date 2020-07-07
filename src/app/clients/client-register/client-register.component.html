@@ -1,0 +1,111 @@
+<!-- Main navigation -->
+
+
+<!-- Full Page Intro -->
+<div
+  style="background-image: url('/assets/moda2.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+    <!-- Content -->
+    <div class="container">
+      <!--Grid row-->
+      <div class="row mt-5">
+        <!--Grid column-->
+        <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+          <h2 class="h2-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Sign up right now! </h2>
+          <hr class="hr-dark wow fadeInLeft" data-wow-delay="0.3s">
+          <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Rem repellendus quasi fuga
+            nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea
+            dolor molestiae, quisquam iste, maiores. Nulla.</h6>
+          <a class="btn btn-outline-dark btn-rounded wow fadeInLeft" data-wow-delay="0.3s">Learn more</a>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-md-6 col-xl-5 mb-4">
+          <!--Form-->
+
+          <div class="card wow fadeInRight" data-wow-delay="0.3s">
+            <div class="card-body">
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="black-text font-weight-bold">
+                  <i class="fa fa-user black-text"></i> Register:</h3>
+                <hr class="hr-dark">
+              </div>
+              <!--Body-->
+              <form [formGroup]="formClient" (ngSubmit)='sendRegister()'>
+
+                <div class="alert alert-danger" *ngIf="errors.length > 0">
+                  <h3 id="msgRetorno">Ops! Something went wrong:</h3>
+                  <ul>
+                      <li *ngFor="let error of errors">{{ error }}</li>
+                  </ul>
+              </div>
+                <div class="md-form form-group">
+                  <i class="fa fa-user prefix black-text active"></i>
+                  <input type="text" id="form3" class="black-text form-control" formControlName='name' [ngClass]="{'is-invalid' : displayMessage.name }" />
+                  <label for="form3" class="active">Your name</label>
+                  <span class="text-danger"
+                    *ngIf="displayMessage.name">
+                    <p [innerHTML]="displayMessage.name"></p>
+                  </span>
+                </div>
+                <div class="md-form form-group">
+                  <i class="fa fa-envelope prefix black-text active"></i>
+                  <input type="email" id="form2" class="black-text form-control" formControlName='email' [ngClass]="{'is-invalid' : displayMessage.email }"/>
+                  <label for="form2" class="active">Your email</label>
+                  <span class="text-danger"
+                    *ngIf="displayMessage.email">
+                    <p [innerHTML]="displayMessage.email"></p>
+                  </span>
+                </div>
+                <div class="md-form form-group">
+                  <i class="fa fa-lock prefix black-text active"></i>
+                  <input type="password" id="form4" class="black-text form-control" formControlName='password' [ngClass]="{'is-invalid' : displayMessage.password }"/>
+                  <label for="form4">Your password</label>
+                  <span class="text-danger"
+                    *ngIf="displayMessage.password">
+                    <p [innerHTML]="displayMessage.password"></p>
+                  </span>
+                </div>
+                <div class="md-form form-group">
+                  <i class="fa fa-lock prefix black-text active"></i>
+                  <input type="password" id="form5" class="black-text form-control" formControlName='passConfirm' [ngClass]="{'is-invalid' : displayMessage.passConfirm }"/>
+                  <label for="form5">Confirm password</label>
+                  <span class="text-danger"
+                    *ngIf="displayMessage.passConfirm">
+                    <p [innerHTML]="displayMessage.passConfirm"></p>
+                  </span>
+                </div>
+                <div class="text-center mt-4 form-group">
+                  <button class="btn black-text btn-rounded" type="submit" [disabled]='!formClient.valid'>Sign up</button>
+                  <hr class="hr-dark mb-3 mt-4">
+                  <div class="inline-ul text-center d-flex justify-content-center">
+                    <a class="p-2 m-2 tw-ic">
+                      <i class="fab fa-twitter black-text fa-2x"></i>
+                    </a>
+                    <a class="p-2 m-2 li-ic">
+                      <i class="fab fa-linkedin-in black-text fa-2x"> </i>
+                    </a>
+                    <a class="p-2 m-2 ins-ic">
+                      <i class="fab fa-instagram black-text fa-2x"> </i>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!--/.Form-->
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+
+<!-- Main navigation -->

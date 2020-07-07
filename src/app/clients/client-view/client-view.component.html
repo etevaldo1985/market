@@ -1,0 +1,104 @@
+<!-- Table with panel -->
+<div class="card card-cascade narrower">
+
+  <!--Card image-->
+  <div
+    class="view view-cascade  py-2 mx-4 mb-3 d-flex justify-content-between align-items-center" id="base">
+
+    <div>
+      <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
+        <i class="fas fa-th-large mt-0"></i>
+      </button>
+      <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
+        <i class="fas fa-columns mt-0"></i>
+      </button>
+    </div>
+
+    <a href="" class="black-text mx-3">Clients</a>
+
+    <div>
+      <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
+        <i class="fas fa-pencil-alt mt-0"></i>
+      </button>
+      <button type="submit" class="btn btn-outline-black btn-rounded btn-sm px-2">
+        <i class="far fa-trash-alt mt-0"></i>
+      </button>
+      <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
+        <i class="fas fa-info-circle mt-0"></i>
+      </button>
+    </div>
+
+  </div>
+  <!--/Card image-->
+
+  <div class="px-4">
+
+    <div class="table-wrapper">
+      <!--Table-->
+      <table class="table table-hover mb-0">
+
+        <!--Table head-->
+        <thead>
+          <tr>
+            <th>
+              <input class="form-check-input" type="checkbox" id="checkbox">
+              <label class="form-check-label" for="checkbox" class="mr-2 label-table"></label>
+            </th>
+            <th class="th-lg">
+              <a>ID
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">Name
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a href="">E-mail
+                <i class="fas fa-sort ml-1"></i>
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <!--Table head-->
+
+        <!--Table body-->
+        <tbody *ngFor='let client of clients'>
+          <tr>
+            <th scope="row">
+              <input class="form-check-input" type="checkbox" id="checkbox1">
+              <label class="form-check-label" for="checkbox1" class="label-table"></label>
+            </th>
+            <td>{{ client.id }}</td>
+            <td>{{ client.name }}</td>
+            <td>{{ client.email }}</td>
+            <td>
+              <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
+                <i class="fas fa-pencil-alt mt-0"></i>
+              </button>
+            </td>
+            <td>
+              <button type="submit" [routerLink]="['/client-delete', client.id]" class="btn btn-outline-black btn-rounded btn-sm px-2">
+                <i class="far fa-trash-alt mt-0"></i>
+              </button>
+            </td>
+            <td>
+              <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
+                <i class="fas fa-info-circle mt-0"></i>
+              </button>
+            </td>
+
+
+          </tr>
+
+        </tbody>
+        <!--Table body-->
+      </table>
+      <!--Table-->
+    </div>
+
+  </div>
+
+</div>
+<!-- Table with panel -->

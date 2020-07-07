@@ -1,0 +1,22 @@
+.jumbotron{
+background-color: antiquewhite;
+margin: -1rem 0rem;
+height: 11rem;
+
+}
+img{
+  width: 300px;
+  height: 200px;
+
+}
+.btn {
+  margin: -1rem 0rem;
+}
+
+  .display-4{
+    height: 2rem;
+  }
+  .btn-indigo{
+    color: whitesmoke !important;
+    background-color: #dd9394 !important;
+  }

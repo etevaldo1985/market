@@ -1,0 +1,200 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "clothing 1",
+      "value": 250,
+      "active": true,
+      "image": "dress"
+    },
+    {
+      "id": 2,
+      "name": "clothing 2",
+      "value": 780,
+      "active": true,
+      "image": "dress2"
+    },
+    {
+      "id": 3,
+      "name": "clothing 3",
+      "value": 500,
+      "active": true,
+      "image": "dress3"
+    },
+    {
+      "id": 4,
+      "name": "clothing 4",
+      "value": 345,
+      "active": true,
+      "image": "dress4"
+    },
+    {
+      "id": 5,
+      "name": "clothing 5",
+      "value": 900,
+      "active": true,
+      "image": "dress5"
+    },
+    {
+      "id": 6,
+      "name": "clothing 6",
+      "value": 680,
+      "active": true,
+      "image": "dress6"
+    },
+    {
+      "id": 7,
+      "name": "clothing 7",
+      "value": 250,
+      "active": true,
+      "image": "dress7"
+    },
+    {
+      "id": 8,
+      "name": "clothing 8",
+      "value": 800,
+      "active": true,
+      "image": "dress8"
+    },
+    {
+      "id": 9,
+      "name": "clothing 9",
+      "value": 345,
+      "active": true,
+      "image": "dress9"
+    },
+    {
+      "id": 10,
+      "name": "clothing 10",
+      "value": 670,
+      "active": true,
+      "image": "dress10"
+    },
+    {
+      "id": 11,
+      "name": "clothing 11",
+      "value": 789,
+      "active": true,
+      "image": "dress11"
+    },
+    {
+      "id": 12,
+      "name": "clothing 12",
+      "value": 900,
+      "active": true,
+      "image": "dress12"
+    },
+    {
+      "id": 13,
+      "name": "clothing 13",
+      "value": 321,
+      "active": true,
+      "image": "dress14"
+    },
+    {
+      "id": 14,
+      "name": "clothing 14",
+      "value": 456,
+      "active": true,
+      "image": "dress14"
+    },
+    {
+      "id": 15,
+      "name": "clothing 15",
+      "value": 567,
+      "active": true,
+      "image": "dress15"
+    }
+ ],
+
+ "clients": [
+   {
+     "id": 1,
+     "name": "Clark",
+     "phone": "2505753243",
+     "email": "clark@gmail.com",
+     "password": "165812",
+     "comfirm": "126512"
+   },
+   {
+    "id": 2,
+    "name": "Mary",
+    "phone": "2505709843",
+    "email": "mary@gmail.com",
+    "password": "164812",
+    "comfirm": "164812"
+  },
+  {
+    "id": 3,
+    "name": "Mark",
+    "phone": "2505787943",
+    "email": "mark@gmail.com",
+    "password": "145812",
+    "comfirm": "145812"
+  },
+  {
+    "id": 4,
+    "name": "Jhon",
+    "phone": "2587753243",
+    "email": "jhon@gmail.com",
+    "password": "167812",
+    "comfirm": "167812"
+  },
+  {
+    "id": 5,
+    "name": "Heyde",
+    "phone": "2505789043",
+    "email": "heyde@gmail.com",
+    "password": "124782",
+    "comfirm": "124782"
+  },
+  {
+    "id": 6,
+    "name": "Matheus",
+    "phone": "2506783243",
+    "email": "matheus@gmail.com",
+    "password": "124912",
+    "comfirm": "124912"
+  },
+  {
+    "id": 7,
+    "name": "Lara",
+    "phone": "456753243",
+    "email": "lara@gmail.com",
+    "password": "109812",
+    "comfirm": "109812"
+  },
+  {
+    "id": 8,
+    "name": "Mara",
+    "phone": "2505653243",
+    "email": "mara@gmail.com",
+    "password": "134812",
+    "comfirm": "134812"
+  },
+  {
+    "id": 9,
+    "name": "Joana",
+    "phone": "2345753243",
+    "email": "joana@gmail.com",
+    "password": "112812",
+    "comfirm": "112812"
+  },
+  {
+    "id": 10,
+    "name": "Marie",
+    "phone": "2505753234",
+    "email": "marie@gmail.com",
+    "password": "155812",
+    "comfirm": "155812"
+  },
+  {
+    "id": 11,
+    "name": "Josh",
+    "phone": "2505753243",
+    "email": "josh@gmail.com",
+    "password": "124662",
+    "comfirm": "124662"
+  }
+ ]
+}

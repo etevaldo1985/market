@@ -1,0 +1,55 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
+  <a class="navbar-brand" href="#">Market</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+    aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/items-view']">Items</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/client-view']">Clients</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/contact']"><i class="fas fa-envelope"></i>Contact</a>
+
+      </li>
+    </ul>
+    <ul [ngSwitch]='checkUSerLogged()' class="navbar-nav ml-auto nav-flex-icons">
+      <li *ngSwitchCase='false' class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Profile
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" [routerLink]="['/login']">Login</a>
+          <a class="dropdown-item" [routerLink]="['/client-register']">Sign Up</a>
+
+        </div>
+      </li>
+      <li *ngSwitchCase='true'  class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Profile
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item">{{ email }}
+          </a>
+          <a class="dropdown-item" (click)='logOut()'>LogOut</a>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
