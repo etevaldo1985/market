@@ -17,6 +17,7 @@ export class ClientDeleteComponent implements OnInit {
 
   ngOnInit(): void {
 
+
     this.route.params
     .subscribe(params => {
 

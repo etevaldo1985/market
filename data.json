@@ -256,7 +256,7 @@
     },
     {
       "email": "etevaldo.memoria@gmail.com",
-      "password": "Se8digo9",
+      "password": "123456",
       "id": 2
     },
     {
@@ -265,29 +265,9 @@
       "id": 3
     },
     {
-      "email": "etevaldo.memoria@gmail.com",
-      "password": "Se8digo9",
+      "email": "guiome@gmail.com",
+      "password": "123456",
       "id": 4
-    },
-    {
-      "email": "etevaldo.memoria@gmail.com",
-      "password": "Se8digo9",
-      "id": 5
-    },
-    {
-      "email": "etevaldo.memoria@gmail.com",
-      "password": "Se8digo9",
-      "id": 6
-    },
-    {
-      "email": "etevaldo.memoria@gmail.com",
-      "password": "Se8digo9",
-      "id": 7
-    },
-    {
-      "email": "etevaldo.memoria@gmail.com",
-      "password": "Se8digo9",
-      "id": 8
     }
   ],
   "contact": [

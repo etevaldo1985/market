@@ -85,9 +85,9 @@ merge(...controlBlurs)
 
           this.client = clients;
 
-           let found = clients.filter( email => email.email === this.logins.email);
-           let pass = clients.filter( email => email.password === this.logins.password);
-          if ( found.length === 0 || pass.length === 0){
+           let found = clients.filter( clients => clients.email === this.logins.email && clients.password === this.logins.password);
+
+          if ( found.length === 0 ){
             console.log('User not registered or password incorrect');
             this.toastr.error('User not registered or password incorrect', 'Ops!!!');
           }else {
