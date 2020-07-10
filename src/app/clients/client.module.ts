@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomFormsModule } from 'ng2-validation';
 import { ClientService } from './services/client.service';
 import { ClientDeleteComponent } from './client-delete/client-delete.component';
+import { ClientEditionComponent } from './client-edition/client-edition.component';
 
 
 @NgModule ({
@@ -21,7 +22,8 @@ import { ClientDeleteComponent } from './client-delete/client-delete.component';
     ClientRegisterComponent,
     ClientAppComponent,
     LoginComponent,
-    ClientDeleteComponent
+    ClientDeleteComponent,
+    ClientEditionComponent
   ],
   imports: [
     CommonModule,
