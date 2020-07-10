@@ -10,6 +10,8 @@ import { Client } from '../models/client';
 export class ClientViewComponent implements OnInit {
 
   clients: Client[];
+  check: boolean = false;
+  id: number;
 
   constructor(private clientService: ClientService) { }
 
@@ -22,6 +24,11 @@ export class ClientViewComponent implements OnInit {
       error => console.log(error)
     )
 
+  }
+
+  checkedBox(id: number){
+    this.check = !this.check;
+    this.id = id;
   }
 
 

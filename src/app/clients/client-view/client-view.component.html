@@ -6,25 +6,20 @@
     class="view view-cascade  py-2 mx-4 mb-3 d-flex justify-content-between align-items-center" id="base">
 
     <div>
-      <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
-        <i class="fas fa-th-large mt-0"></i>
-      </button>
-      <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
-        <i class="fas fa-columns mt-0"></i>
-      </button>
+
     </div>
 
     <a href="" class="black-text mx-3">Clients</a>
 
     <div>
       <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
-        <i class="fas fa-pencil-alt mt-0"></i>
+        <i class="fas fa-pencil-alt mt-0 fa-2x"></i>
       </button>
-      <button type="submit" class="btn btn-outline-black btn-rounded btn-sm px-2">
-        <i class="far fa-trash-alt mt-0"></i>
+      <button type="submit" [disabled]='!check'  [routerLink]="['client-delete', this.id]" class="btn btn-outline-black btn-rounded btn-sm px-2">
+        <i class="far fa-trash-alt mt-0 fa-2x"></i>
       </button>
       <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
-        <i class="fas fa-info-circle mt-0"></i>
+        <i class="fas fa-info-circle mt-0 fa-2x"></i>
       </button>
     </div>
 
@@ -41,8 +36,8 @@
         <thead>
           <tr>
             <th>
-              <input class="form-check-input" type="checkbox" id="checkbox">
-              <label class="form-check-label" for="checkbox" class="mr-2 label-table"></label>
+              <input class="form-check-input" type="checkbox"   id="checkbox">
+              <label class="form-check-label" for="checkbox" id="checkbox" class="mr-2 label-table"></label>
             </th>
             <th class="th-lg">
               <a>ID
@@ -67,27 +62,13 @@
         <tbody *ngFor='let client of clients'>
           <tr>
             <th scope="row">
-              <input class="form-check-input" type="checkbox" id="checkbox1">
+              <input class="form-check-input" type="checkbox" (click)='checkedBox(client.id)' id="checkbox1">
               <label class="form-check-label" for="checkbox1" class="label-table"></label>
             </th>
             <td>{{ client.id }}</td>
             <td>{{ client.name }}</td>
             <td>{{ client.email }}</td>
-            <td>
-              <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
-                <i class="fas fa-pencil-alt mt-0"></i>
-              </button>
-            </td>
-            <td>
-              <button type="submit" [routerLink]="['/client-delete', client.id]" class="btn btn-outline-black btn-rounded btn-sm px-2">
-                <i class="far fa-trash-alt mt-0"></i>
-              </button>
-            </td>
-            <td>
-              <button type="button" class="btn btn-outline-black btn-rounded btn-sm px-2">
-                <i class="fas fa-info-circle mt-0"></i>
-              </button>
-            </td>
+
 
 
           </tr>

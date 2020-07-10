@@ -1,5 +1,6 @@
-import { Client } from './../models/client';
+import { Observable } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { Client } from './../models/client';
 import { ClientService } from './../services/client.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,32 +11,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientDeleteComponent implements OnInit {
 
-  client: Client;
+  client: Client = new Client();
+
 
   constructor(private clientService: ClientService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute) {
+
+
+    }
 
   ngOnInit(): void {
 
+    this.route.params.subscribe(
+      params => {
+        this.clientService.getCliById(params.id)
+        .subscribe(
+          client => {
 
-    this.route.params
-    .subscribe(params => {
+            this.client = client
+            },
+            error => console.log(error))
+      }
+    )
+    }
 
-      this.clientService.getCliById(params.id)
-      .subscribe(
-        client => {
-          this.client = client;
-        },
-        error => console.log(error)
+    deleteClient(){
 
-      );
-
-    },
-    error => console.log(error))
-  }
-
-  deleteClient(){
+    }
 
   }
 
-}
+
+

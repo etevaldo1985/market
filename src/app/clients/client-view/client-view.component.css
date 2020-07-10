@@ -5,3 +5,9 @@ margin: 3rem 0rem;
 .fas {
   color: black !important;
 }
+.black-text {
+  font-size: 40px;
+}
+.form-check-input {
+  margin: 0rem 1rem;
+}

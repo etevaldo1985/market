@@ -50,9 +50,7 @@ export class ClientService extends BaseService {
   getCliById(id: number): Observable<Client> {
     return this.http
     .get<Client>(this.UrlService + 'clients/' + id)
-    .pipe(
-      map(this.extractData),
-      catchError(this.serviceError)
+    .pipe(catchError(this.serviceError)
     )
   }
 
