@@ -112,39 +112,17 @@ export class ClientEditionComponent implements OnInit, AfterViewInit {
 
 }
 clientEdition() {
+
+  if (this.clientForm.dirty && this.clientForm.valid){
   this.client = Object.assign({}, this.client, this.clientForm.value);
 
-
-
-
-
-
-
-  this.clientService.getEmailClients()
+  this.clientService.updateCli(this.client)
   .subscribe(
-    clients => {
-      this.clients = clients;
-
-      let found = clients.filter( email => email.email === this.client.email)
-
-      if (found.length === 1 ){
-        this.toastr.error('This email is already in use', 'Ops!!!')
-      }else{
-
-        this.clientService.registerClient(this.client)
-        .subscribe(
-          success => {this.processSuccess(success); },
-          fail => {this.processFail(fail); }
-        );
-
-      }
-    }
+    success => {this.processSuccess(success);},
+    fail => {this.processFail(fail);}
   )
 
-
-
-
-
+  }
 
 
 }
@@ -152,12 +130,12 @@ processSuccess(response: any) {
   this.clientForm.reset();
   this.errors = [];
 
-  this.clientService.localStorage.saveUser(this.client.email);
 
 
 
 
-  const toast = this.toastr.success('Client registered succesfully', 'Good Job!');
+
+  const toast = this.toastr.success('Client updated succesfully', 'Good Job!');
 
   if (toast){
     toast.onHidden.subscribe(() => {

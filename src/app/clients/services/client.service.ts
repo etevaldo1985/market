@@ -54,6 +54,22 @@ export class ClientService extends BaseService {
     )
   }
 
+  updateCli(client: Client): Observable<Client> {
+    return this.http
+    .put(this.UrlService + 'clients/' + client.id, client )
+    .pipe(
+      map(super.extractData),
+      catchError(super.serviceError));
+  }
+
+  deleteCli(id: number): Observable<Client> {
+    return this.http
+    .delete(this.UrlService + 'clients/' + id)
+    .pipe(
+      map(super.extractData),
+      catchError(super.serviceError));
+  }
+
 
 
 

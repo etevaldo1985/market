@@ -1,5 +1,6 @@
+import { ToastrService } from 'ngx-toastr';
 import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Client } from './../models/client';
 import { ClientService } from './../services/client.service';
 import { Component, OnInit } from '@angular/core';
@@ -12,10 +13,13 @@ import { Component, OnInit } from '@angular/core';
 export class ClientDeleteComponent implements OnInit {
 
   client: Client = new Client();
+  errors: any[] = [];
 
 
   constructor(private clientService: ClientService,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute,
+    private toastr: ToastrService,
+    private router: Router) {
 
 
     }
@@ -36,6 +40,35 @@ export class ClientDeleteComponent implements OnInit {
     }
 
     deleteClient(){
+      this.clientService.deleteCli(this.client.id)
+      .subscribe(
+        success => {this.processSuccess(success);},
+        fail => {this.processFail(fail);}
+      )
+
+    }
+
+    processSuccess(response: any) {
+
+      this.errors = [];
+
+
+
+
+
+
+      const toast = this.toastr.success('Client deleted succesfully', 'Good Job!');
+
+      if (toast){
+        toast.onHidden.subscribe(() => {
+          this.router.navigate(['/client-view'])
+        })
+      }
+    }
+
+    processFail(fail: any) {
+      this.errors = fail.error.errors;
+      this.toastr.error('Something went wrong', 'Ops!')
 
     }
 

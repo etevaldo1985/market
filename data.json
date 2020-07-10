@@ -118,8 +118,8 @@
       "id": 2,
       "name": "Mary",
       "email": "mary@gmail.com",
-      "password": "164812",
-      "comfirm": "164812"
+      "password": "168412",
+      "passConfirm": "168412"
     },
     {
       "id": 3,
@@ -130,10 +130,11 @@
     },
     {
       "id": 4,
-      "name": "Jhon",
-      "email": "jhon@gmail.com",
+      "name": "John",
+      "email": "john@gmail.com",
       "password": "167812",
-      "comfirm": "167812"
+      "comfirm": "167812",
+      "passConfirm": "167812"
     },
     {
       "id": 5,
@@ -220,13 +221,6 @@
       "id": 17
     },
     {
-      "name": "guilherme",
-      "email": "guiguigui@gmail.com",
-      "password": "123456",
-      "passConfirm": "123456",
-      "id": 18
-    },
-    {
       "name": "mara",
       "email": "maraaze@gmail.com",
       "password": "123456",
@@ -239,13 +233,6 @@
       "password": "123456",
       "passConfirm": "123456",
       "id": 20
-    },
-    {
-      "name": "etevaldo",
-      "email": "etev44aldo.memoria@gmail.com",
-      "password": "Se8digo9",
-      "passConfirm": "Se8digo9",
-      "id": 21
     }
   ],
   "login": [
