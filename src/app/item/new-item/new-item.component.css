@@ -1,0 +1,87 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #3f51b5 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+ .navbar:not(.top-nav-collapse) {
+  background: black !important;
+ }
+}
+
+.rgba-gradient {
+  background: linear-gradient(45deg, #eea3a483 , #ebd1958c 100%);
+}
+
+.card {
+  background-color: antiquewhite;
+}
+
+.md-form label {
+  color: black;
+}
+
+h6 {
+  line-height: 1.7;
+  color: black !important;
+  font-weight: 400;
+
+}
+h2{
+  font-size: 30pt;
+  color: black;
+  font-weight: 900;
+}
+h3{
+  font-size: 30pt;
+  color: black;
+  font-weight: 900;
+  margin: 1rem 7rem;
+}
+.mask{
+  height: 1000px;
+}
+
+.btn{
+  background-color: antiquewhite;
+}
+.container {
+  max-width: 500px;
+  margin-left: 2rem !important;
+
+
+}
+input,
+select,
+file,
+textarea {
+    max-width: 400px;
+}
+

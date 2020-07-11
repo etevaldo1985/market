@@ -1,6 +1,6 @@
 import { ItemService } from './../item.service';
 import { Component, OnInit, Input } from '@angular/core';
-import { Action } from 'rxjs/internal/scheduler/Action';
+
 import { ActivatedRoute, Router } from '@angular/router';
 import { Item } from '../item';
 
@@ -25,7 +25,7 @@ export class ItemSingleComponent implements OnInit {
   ngOnInit(): void {
     this.route.params
     .subscribe(params => {
-      console.log(params.id);
+
       this.itemService.getById(params.id)
       .subscribe(
         item => {

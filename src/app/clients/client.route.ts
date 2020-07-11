@@ -12,7 +12,8 @@ import { ClientDeleteComponent } from './client-delete/client-delete.component';
 const clientRoutingConfig: Routes = [
   {path: '', component: ClientAppComponent,
 children: [
-  {path: '', component: ClientViewComponent},
+  {path: 'client-view', component: ClientViewComponent},
+  {path: 'client-register', component: ClientRegisterComponent},
   {path: 'client-home/:id', component: ClientHomeComponent},
   {path: 'client-delete/:id', component: ClientDeleteComponent},
   {path: 'client-edition/:id', component: ClientEditionComponent}

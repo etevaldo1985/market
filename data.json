@@ -5,7 +5,8 @@
       "name": "clothing 1",
       "value": 250,
       "active": true,
-      "image": "dress"
+      "image": "dress",
+      "rate": 4
     },
     {
       "id": 2,
@@ -89,7 +90,7 @@
       "name": "clothing 13",
       "value": 321,
       "active": true,
-      "image": "dress14"
+      "image": "dress13"
     },
     {
       "id": 14,
@@ -255,6 +256,11 @@
       "email": "guiome@gmail.com",
       "password": "123456",
       "id": 4
+    },
+    {
+      "email": "etevaldo.memoria@gmail.com",
+      "password": "Se8digo9",
+      "id": 5
     }
   ],
   "contact": [

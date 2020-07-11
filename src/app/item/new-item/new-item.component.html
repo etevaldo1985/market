@@ -1,0 +1,105 @@
+<!-- Main navigation -->
+
+
+<!-- Full Page Intro -->
+<div
+  style="background-image: url('/assets/moda4.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <!-- Mask & flexbox options-->
+  <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+    <!-- Content -->
+    <div class="card container">
+      <!--Grid row-->
+      <h3>New Item </h3>
+
+  <hr>
+  <div class="row">
+    <div class="col-md-10">
+      <form enctype="multipart/form-data" (ngSubmit)="addItem()" [formGroup]='itemForm'>
+
+        <div class="md-form form-group">
+
+          <div>
+            <input class="form-control" id="name" type="text"  formControlName="name"
+              [ngClass]="{'is-invalid': displayMessage.name }" />
+              <label class="active" for="name">Name</label>
+            <span class="text-danger" *ngIf="displayMessage.name">
+              <p [innerHTML]="displayMessage.name"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="md-form form-group">
+
+          <div>
+            <textarea cols="40" rows="5" maxlength="1000" class="form-control" id="description"
+               formControlName="description"
+              [ngClass]="{'is-invalid': displayMessage.description }"></textarea>
+              <label class="active" for="description">Description</label>
+            <span class="text-danger" *ngIf="displayMessage.description">
+              <p [innerHTML]="displayMessage.description"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Item Image</label>
+
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="image" formControlName="image"
+              (change)='fileChangeEvent($event)' [ngClass]="{'is-invalid': displayMessage.image }">
+            <label data-browse="Search" style="width: 400px" class="custom-file-label"></label>
+            <span *ngIf='imageName'><br />{{ imageName }}</span>
+            <span class="text-danger" *ngIf="displayMessage.image">
+              <p [innerHTML]="displayMessage.image"></p>
+            </span>
+          </div>
+          <div *ngIf='imageName' class="row">
+            <div class="col col-md-6">
+              <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="false"
+                [containWithinAspectRatio]="containWithinAspectRatio" [aspectRatio]="4 / 3" [resizeToWidth]="200"
+                [cropperMinWidth]="128" [onlyScaleDown]="true" [roundCropper]="false" [canvasRotation]="canvasRotation"
+                [transform]="transform" [alignImage]="'left'" [style.display]="showCropper ? null : 'none'" format="png"
+                (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded()"
+                (cropperReady)="cropperReady($event)" (loadImageFailed)="loadImageFailed()"></image-cropper>
+            </div>
+            <div class="col col-md-6">
+              <img [src]="croppedImage" [style.border]="croppedImage ? '1px solid black' : 'none'" />
+            </div>
+          </div>
+        </div>
+
+        <div class="md-form form-group">
+
+          <div>
+            <input class="form-control" id="valor" type="text"  formControlName="value"
+              [ngClass]="{'is-invalid': displayMessage.value }" />
+              <label class="active" for="value">Value</label>
+            <span class="text-danger" *ngIf="displayMessage.value">
+              <p [innerHTML]="displayMessage.value"></p>
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" id="active" formControlName="active" name="active"
+              value="true"> active?
+          </label>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" [disabled]="!itemForm.valid" value="register" class="btn btn-outline-dark waves-effect">&nbsp;
+          <a class="btn btn-outline-dark waves-effect" href="/items/items-view">Back</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+    </div>
+    <!-- Content -->
+  </div>
+  <!-- Mask & flexbox options-->
+</div>
+<!-- Full Page Intro -->
+
+<!-- Main navigation -->

@@ -1,3 +1,4 @@
+import { ItemService } from './../item.service';
 import { Component, Input } from '@angular/core';
 import { Item } from '../item';
 
@@ -8,9 +9,18 @@ import { Item } from '../item';
 })
 export class ItemCardComponent {
 
+  constructor(private itemService: ItemService){}
+
   @Input()
   item: Item;
 
+  currentRate = 0;
+
+  addRate(item: Item) {
+
+    this.itemService.updateRate(item);
+
+  }
 
 
 }

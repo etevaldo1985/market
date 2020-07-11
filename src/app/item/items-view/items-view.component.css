@@ -40,6 +40,31 @@
   padding: 3rem;
   max-width: 27.3%;
 }
+#jumb{
+  height: 15rem;
+  background-color: antiquewhite;
+  margin: 3rem 0rem;
+
+}
+.btn {
+float: left !important;
+
+}
+h2 {
+  float: left !important;
+
+}
+.my-4 {
+  margin-bottom: 2.5rem!important;
+  margin-top: 3.5rem!important;
+}
+.form-inline {
+  float: right !important;
+}
+.md-form {
+  margin-top: 0.5rem !important;
+
+}
 
 
 

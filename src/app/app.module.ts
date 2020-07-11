@@ -15,6 +15,7 @@ import { InstitutionalModule } from './institutional/institutional.module';
 import { ClientModule } from './clients/client.module';
 import { CustomFormsModule } from 'ng2-validation';
 import { ToastrModule } from 'ngx-toastr';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -37,7 +38,8 @@ import { ToastrModule } from 'ngx-toastr';
     ClientModule,
     CustomFormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule
 
 
 

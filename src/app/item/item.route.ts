@@ -1,3 +1,4 @@
+import { NewItemComponent } from './new-item/new-item.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { ItemsViewComponent } from './items-view/items-view.component';
@@ -8,9 +9,11 @@ import { ItemSingleComponent } from './item-single/item-single.component';
 const itemRoutingConfig: Routes = [
     { path: '', component: ItemAppComponent,
   children: [
-    {path: '', component: ItemsViewComponent},
+    {path: 'items-view', component: ItemsViewComponent},
+    {path: 'new-item', component: NewItemComponent},
     {path: 'single-item/:id', component: ItemSingleComponent}
-  ]}
+  ]
+}
 
 ];
 

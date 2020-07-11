@@ -13,12 +13,11 @@ const rootRouterConfig: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'client-register', component: ClientRegisterComponent},
 {path: 'login', component: LoginComponent},
-  {path: 'items-view',
+  {path: 'items',
 loadChildren: () => import('./item/item.module')
 .then(m => m.ItemModule)},
-{path: 'client-view',
+{path: 'clients',
 loadChildren: () => import('./clients/client.module')
 .then(m => m.ClientModule)}
 

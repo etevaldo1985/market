@@ -4,4 +4,7 @@ export class Item {
   active: boolean;
   image: string;
   value: number;
+  description: string;
+  imageUpload: string;
+  rate: number;
 }
