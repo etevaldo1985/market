@@ -123,13 +123,6 @@
       "passConfirm": "168412"
     },
     {
-      "id": 3,
-      "name": "Mark",
-      "email": "mark@gmail.com",
-      "password": "145812",
-      "comfirm": "145812"
-    },
-    {
       "id": 4,
       "name": "John",
       "email": "john@gmail.com",
